@@ -1,7 +1,7 @@
 var express = require("express");
 var app = express();
 var request = require("request");
-
+var portNumber = 3004;
 //so we dont have to write .ejs after every file name
 app.set("view engine", "ejs");
 
@@ -22,7 +22,7 @@ app.get("/results",function(req,res){
     })
 });
 
-
-app.listen(process.env.PORT, process.env.IP, function(){
-    console.log("Movie app has started");
+app.listen(portNumber,function(){
+    console.log("Movie Api has started ..");
 });
+
