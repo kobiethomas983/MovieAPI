@@ -1,6 +1,13 @@
-<h1>The search page</h1>
+<% include ./partials/header%>
 
-<form action = "/results" method = "/GET">
-    <input type = "text" name = "search" placeholder = "search type">
-    <input type = "Submit" >
-</form>
+ <div class="">
+   <h1>Search for a Movie</h1>
+     <form action = "/results" method = "/GET">
+         <input type = "text" name = "search" placeholder = "search movie">
+         <input type = "Submit" >
+     </form>
+ </div>
+
+
+
+<% include ./partials/footer%>
